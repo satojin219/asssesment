@@ -1,7 +1,20 @@
 <?php
-try{
-  $dsn = 'mysql:dbname=heroku_e65ff3d9c1fd232;host=us-cdbr-east-03.cleardb.com';
-  $db = new PDO($dsn, 'b2433b078f1bab', '062b9a4e');
-}catch(PDOException $e){
-  echo 'DB接続エラー' .$e->getMessage();
+
+
+function dbConnect()
+{
+
+  $dsn = 'mysql:dbname=heroku_6b56cb56f839be0;host=us-cdbr-east-03.cleardb.com;charset=utf8';
+  $user = 'befd36e304aa83';
+  $password = 'c34364a4';
+  $option = array(
+
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+  );
+
+  $dbh = new PDO($dsn, $user, $password, $option);
+  return $dbh;
 }
+?>
