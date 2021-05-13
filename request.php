@@ -4,7 +4,7 @@ require('dbconnect.php');
 
 
  
-$stmt = $db -> prepare("SELECT * FROM assesmentdb WHERE id=(SELECT MAX(id) FROM assesmentdb)"); 
+$stmt = $db -> prepare("SELECT * FROM nutrition_db WHERE id=(SELECT MAX(id) FROM nutrition_db)"); 
 $stmt -> execute();
 $data = $stmt -> fetch();
  
