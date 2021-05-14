@@ -3,7 +3,7 @@
 session_start();
 require('dbconnect.php');
 if(!isset($_SESSION['join'])){
-  header('Location:assesment.php');
+  header('Location:index.php');
   exit();
 }
 
