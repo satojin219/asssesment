@@ -14,7 +14,7 @@ function dbConnect()
     PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
   );
 
-  $db = new PDO($dsn, $user, $password, $option);
+  $db= new PDO($dsn, $user, $password, $option);
   return $db;
 }
 
