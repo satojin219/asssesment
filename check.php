@@ -143,7 +143,7 @@ if(!empty($_POST)){
 身体活動レベル:<?php print(htmlspecialchars($_SESSION['join']['active_level'],ENT_QUOTES));?>
 
 
-<div><a href="assesment.php?action=rewrite">&laquo;&nbsp;戻る</a> | <input type="submit" value="計算する" /></div>
+<div><a href="index.php?action=rewrite">&laquo;&nbsp;戻る</a> | <input type="submit" value="計算する" /></div>
 </form>
 
 </body>
