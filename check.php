@@ -9,7 +9,7 @@ if(!isset($_SESSION['join'])){
 
 if(!empty($_POST)){
 
-  $statement=$db->prepare('INSERT INTO assesment_db SET gender=?,age=?,weight=?,height=?,active_level=?,
+  $statement=$db->prepare('INSERT INTO nutrition_db SET gender=?,age=?,weight=?,height=?,active_level=?,
   BMI=weight/((height/100)*(height/100)),
   fitness_weight=height/100*height/100*22,
   obesity_level=CASE WHEN BMI < 18.5 THEN "痩せ"
