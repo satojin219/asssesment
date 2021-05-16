@@ -4,9 +4,9 @@
 function dbConnect()
 {
 
-  $dsn = 'mysql:dbname=heroku_ebf40dcd96f8615;host=us-cdbr-east-03.cleardb.com;charset=utf8';
-  $user = 'b67e08121e7587';
-  $password = 'b843529d';
+  $dsn = 'mysql:dbname=heroku_c8638d3044b91eb;host=us-cdbr-east-03.cleardb.com;charset=utf8';
+  $user = 'b9502926e674f6';
+  $password = '54607328';
   $option = array(
 
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
