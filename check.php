@@ -112,7 +112,7 @@ if(!empty($_POST)){
   ));
 
   unset($_SESSION['join']);
-  header('Location:result.php');
+  header('Location:request.php');
   exit();
 }
 ?>
